@@ -1,11 +1,9 @@
-# xxxxxx [![CircleCI](https://circleci.com/gh/shelfio/xxxxxx/tree/master.svg?style=svg)](https://circleci.com/gh/shelfio/xxxxxx/tree/master)![](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)
-
-> xxxxxx description
+# @shelf/is-valid-email-address
 
 ## Install
 
 ```
-$ yarn add @shelf/xxxxxx
+$ yarn add @shelf/is-valid-email-address
 ```
 
 ## Usage
