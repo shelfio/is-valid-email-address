@@ -1,6 +1,6 @@
 {
   "name": "@shelf/is-valid-email-address",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Email validator",
   "license": "MIT",
   "author": {
@@ -59,7 +59,7 @@
     "typescript": "4.9.3"
   },
   "engines": {
-    "node": ">=16"
+    "node": ">=14"
   },
   "publishConfig": {
     "access": "public"
