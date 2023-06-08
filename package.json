@@ -43,7 +43,7 @@
   "prettier": "@shelf/prettier-config",
   "dependencies": {},
   "devDependencies": {
-    "@babel/cli": "7.19.3",
+    "@babel/cli": "7.22.5",
     "@babel/core": "7.20.2",
     "@shelf/babel-config": "1.2.0",
     "@shelf/eslint-config": "2.29.0",
