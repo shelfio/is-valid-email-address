@@ -1,5 +1,5 @@
 import benny from 'benny';
-import {isValidEmail} from './lib'; // change to lib
+import {isValidEmail} from './src/index.js'; // change to lib
 
 benny.suite(
   'isValidEmail',
