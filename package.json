@@ -23,16 +23,13 @@
     "lint:ci": "eslint . --ext .js,.ts,.json",
     "prepack": "yarn build",
     "size": "size-limit",
-    "test": "jest",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
     "type-check": "tsc --noEmit"
   },
   "lint-staged": {
     "*.{html,md,yml}": "prettier --write",
     "*.{js,ts,json}": "eslint --fix",
     ".circleci/config.yml": ".husky/validate-circleci-config.sh"
-  },
-  "babel": {
-    "extends": "@shelf/babel-config/frontend-library"
   },
   "prettier": "@shelf/prettier-config",
   "devDependencies": {
@@ -51,6 +48,7 @@
     "lint-staged": "13.2.2",
     "prettier": "2.8.8",
     "size-limit": "8.2.4",
+    "ts-jest": "29.1.0",
     "typescript": "5.1.3"
   },
   "engines": {
@@ -58,6 +56,17 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "jest": {
+    "preset": "ts-jest/presets/default-esm",
+    "coverageThreshold": {
+      "global": {
+        "branches": 95,
+        "functions": 100,
+        "lines": 95,
+        "statements": 95
+      }
+    }
   },
   "size-limit": [
     {
