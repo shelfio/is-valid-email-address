@@ -32,6 +32,17 @@
     ".circleci/config.yml": ".husky/validate-circleci-config.sh"
   },
   "prettier": "@shelf/prettier-config",
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 95,
+        "functions": 100,
+        "lines": 95,
+        "statements": 95
+      }
+    },
+    "preset": "ts-jest/presets/default-esm"
+  },
   "devDependencies": {
     "@shelf/eslint-config": "2.29.3",
     "@shelf/prettier-config": "1.0.0",
@@ -53,17 +64,6 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "jest": {
-    "preset": "ts-jest/presets/default-esm",
-    "coverageThreshold": {
-      "global": {
-        "branches": 95,
-        "functions": 100,
-        "lines": 95,
-        "statements": 95
-      }
-    }
   },
   "size-limit": [
     {
