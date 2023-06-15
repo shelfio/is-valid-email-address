@@ -1,6 +1,6 @@
 {
   "name": "@shelf/is-valid-email-address",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "Email validator",
   "license": "MIT",
   "author": {
