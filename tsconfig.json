@@ -6,7 +6,8 @@
     "outDir": "lib",
     "declarationDir": "lib",
     "module": "ESNext",
-    "resolveJsonModule": false
+    "resolveJsonModule": false,
+    "moduleResolution": "NodeNext"
   },
   "include": ["src/index.ts"]
 }

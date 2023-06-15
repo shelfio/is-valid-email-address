@@ -16,7 +16,7 @@
     "lib"
   ],
   "scripts": {
-    "benchmark": "babel benchmark.ts | node",
+    "benchmark": "ts-node-esm benchmark.ts",
     "build": "rm -rf lib/ && tsc",
     "coverage": "yarn test --coverage",
     "lint": "yarn lint:ci --fix",
