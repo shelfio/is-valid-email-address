@@ -1,5 +1,10 @@
 orbs:
   node: circleci/node@5.2.0
+  security: shelfio/shelf-security-orb@0.1.7
+
+filters: &filters
+  tags:
+    only: /.*/
 
 version: 2.1
 
@@ -31,3 +36,12 @@ jobs:
       - run: yarn lint:ci
       - run: yarn build
       - run: yarn size
+
+workflows:
+  version: 2
+  run-sast-tooling:
+    jobs:
+      - security/credentials_scan:
+          project_dir: ./
+          default_branch: master
+          filters: *filters
