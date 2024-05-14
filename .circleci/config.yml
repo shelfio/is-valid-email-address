@@ -41,6 +41,14 @@ workflows:
   version: 2
   run-sast-tooling:
     jobs:
+      - security/sast_scan:
+          project_dir: ./
+          default_branch: master
+          filters:
+            tags:
+              only: /.*/
+          context:
+            - semgrep
       - security/credentials_scan:
           project_dir: ./
           default_branch: master
