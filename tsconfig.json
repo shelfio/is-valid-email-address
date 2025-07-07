@@ -3,7 +3,8 @@
   "compilerOptions": {
     "declaration": true,
     "outDir": "lib",
-    "module": "Node16"
+    "module": "Node16",
+    "types": ["node", "jest"]
   },
   "include": ["src/index.ts"]
 }
