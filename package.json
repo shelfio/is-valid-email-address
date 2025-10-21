@@ -66,5 +66,9 @@
       "path": "lib/index.js",
       "limit": "350 B"
     }
-  ]
+  ],
+  "lint-staged": {
+    "*.{html,md,yml}": "prettier --write",
+    "*.{js,ts,json}": "eslint --fix"
+  }
 }
